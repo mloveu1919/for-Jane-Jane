@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomly Moving Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>តើអ្នកស្រឡាញ់ខ្ញុំទេ? ❤️</h1>
+        <div class="btn-group">
+            <button id="yes-btn">ប្រាកដជាស្រឡាញ់!</button>
+            <button id="no-btn">អត់ទេ</button>
+        </div>
+    </div>
+
+    <!-- ឯកសារ JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
