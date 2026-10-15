@@ -18,5 +18,5 @@ noBtn.addEventListener('mouseover', () => {
 
 // ព្រឹត្តិការណ៍ពេលចុចប៊ូតុង "ប្រាកដជាស្រឡាញ់!"
 yesBtn.addEventListener('click', () => {
-    alert('耶! 😍 អរគុណច្រើនដែលស្រឡាញ់ខ្ញុំ!');
+    alert('耶! 😍 Rkun del slanh bong!');
 });
