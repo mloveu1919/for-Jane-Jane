@@ -1,22 +1,10 @@
-const noBtn = document.getElementById('no-btn');
-const yesBtn = document.getElementById('yes-btn');
+const noBtn = document.getElementById('no-btn'); const yesBtn = document.getElementById('yes-btn');
+noBtn.addEventListener('mouseover', () => { const maxX = window.innerWidth - noBtn.offsetWidth - 50; const maxY = window.innerHeight - noBtn.offsetHeight - 50;
+const randomX = Math.floor(Math.random() * maxX);
+const randomY = Math.floor(Math.random() * maxY);
 
-// ព្រឹត្តិការណ៍ពេលយក Mouse ទៅជិត ឬប៉ះប៊ូតុង "អត់ទេ"
-noBtn.addEventListener('mouseover', () => {
-    // កំណត់ទំហំរត់ផ្អែកលើទំហំ Screen របស់អ្នក
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-
-    // បង្កើតទីតាំងចៃដន្យ (Random Position)
-    const randomX = Math.floor(Math.random() * (windowWidth - 100));
-    const randomY = Math.floor(Math.random() * (windowHeight - 50));
-
-    // ផ្លាស់ប្តូរទីតាំងប៊ូតុងទៅកន្លែងថ្មី
-    noBtn.style.left = randomX + 'px';
-    noBtn.style.top = randomY + 'px';
+noBtn.style.position = 'fixed';
+noBtn.style.left = Math.max(20, randomX) + 'px';
+noBtn.style.top = Math.max(20, randomY) + 'px';
 });
-
-// ព្រឹត្តិការណ៍ពេលចុចប៊ូតុង "ប្រាកដជាស្រឡាញ់!"
-yesBtn.addEventListener('click', () => {
-    alert('耶! 😍 Rkun del slanh bong!');
-});
+yesBtn.addEventListener('click', () => { alert('Ahhhhh! 😍 Rkun Jane del sl bong!'); });
